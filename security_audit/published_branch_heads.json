@@ -1,0 +1,13 @@
+{
+  "default_ref": "refs/heads/main",
+  "branches": [
+    {
+      "ref": "refs/heads/main",
+      "head": "c1e0da90a7e53ff67da26ba0d199bc7f6a32db92"
+    },
+    {
+      "ref": "refs/heads/tray-minimize-to-tray",
+      "head": "1629a4fe4c27d1e16c831cbe66489f03606381e7"
+    }
+  ]
+}

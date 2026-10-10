@@ -33,18 +33,20 @@ scrcpy_temp.zip
 scrcpy_temp.tar.gz
 
 # Env
-.env
-.env.*
 
 # AI Handoff
 history/
 
 
 # Private credential files (ordinary source and databases remain eligible)
-.env
-.env.*
 !.env.example
 !.env.*.example
+
+# SQLite databases stay local; never publish database files or journals.
+
+# Security protections: private credentials and SQLite stay outside Git.
+.env
+.env.*
 .ocr_key
 .fernet_key
 .encryption_key
@@ -53,13 +55,11 @@ id_ed25519
 *.p12
 *.pfx
 *.ppk
+credentials.json
 service-account*.json
 *_credentials.json
-credentials.json
 cookies.json
 cookies_*.json
-
-# SQLite databases stay local; never publish database files or journals.
 *.sqlite
 *.sqlite3
 *.db
